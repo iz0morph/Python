@@ -1,4 +1,4 @@
-class not_number(Exception):
+class NotNumber(Exception):
     pass
 
 
@@ -9,9 +9,9 @@ while True:
         if value == 'quit':
             break
         if not value.isdigit():
-            raise not_number(value)
+            raise NotNumber(value)
         my_list.append(int(value))
-    except not_number as el:
+    except NotNumber as el:
         print('Не число!', el)
     else:
         print(my_list)
