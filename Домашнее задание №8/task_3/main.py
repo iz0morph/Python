@@ -30,7 +30,7 @@ def data_to_yaml():
     items_dict = {}
     for i in items_list:
         price = input(f'Введите цену товара ({i}): ')
-        new_price = {f'{i}': f'{price} $'}
+        new_price = {f'{i}': f'{price} €'}
         items_dict.update(new_price)
     data_dict = {'items': items_list, 'items prices': items_dict,
                  'items quantity': qt_items, }
@@ -47,7 +47,7 @@ def write_to_yaml():
     data_dict = data_to_yaml()
     file_data = read_yaml()
     if file_data != data_dict:
-        with open('file.yaml', 'w') as file:
+        with open('file.yaml', 'w', encoding='utf-8') as file:
             yaml.dump(data_dict, file, default_flow_style=False,
                       allow_unicode=True)
     else:
