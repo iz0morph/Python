@@ -1,0 +1,7 @@
+items:
+- printer
+- mouse
+items prices:
+  mouse: 10 $
+  printer: 70 $
+items quantity: 2
