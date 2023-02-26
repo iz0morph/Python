@@ -9,9 +9,9 @@
 --- используйте списки и циклы, не дублируйте функции
 """
 
-words=['разработка','администрирование','protocol','standard']
+words = ['разработка', 'администрирование', 'protocol', 'standard']
 for i in words:
-    i=i.encode('utf-8')
+    i = i.encode('utf-8')
     print(i)
-    i=i.decode('utf-8')
+    i = i.decode('utf-8')
     print(i)
