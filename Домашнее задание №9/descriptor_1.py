@@ -12,10 +12,10 @@ class Validation:
 
 
 class Road:
-    thickness=Validation()
-    norm_asphalt=Validation()
-    _length=Validation()
-    _width=Validation()
+    thickness = Validation()
+    norm_asphalt = Validation()
+    _length = Validation()
+    _width = Validation()
     def __init__(self, length, width, norm_asphalt, thickness):
         self.thickness = thickness
         self.norm_asphalt = norm_asphalt
